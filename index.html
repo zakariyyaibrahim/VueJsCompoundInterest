@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>COMPOUND INTEREST AUTO CALCULATOR</title>
+    <script src="vue.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="w3.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<div id="app">
+  <h1 class="w3-text-blue">MY COMPOUND INTEREST AUTO CALCULATOR</h1>
+  <form class="w3-container w3-card-4">
+      <label class="w3-text-blue" for="principal"> Principal (P)</label>
+       <input  class="w3-input w3-border" type="number" placeholder="Enter principal" v-model="principal" c ><br>
+
+       <label class="w3-text-blue" for="rate" >Rate (R) </label>
+       <input  class="w3-input w3-border" type="number" placeholder="Enter Rate" v-model="rate" ><br>
+
+       <label class="w3-text-blue" for="numberOfTimes" >Number of years (T)</label>
+      <input  class="w3-input w3-border" type="number" placeholder="Enter Number of times" v-model="numberOfTimes" ><br>
+      <label class="w3-text-blue" for="time">Number of Period per year (N)</label>
+      <input  class="w3-input w3-border" type="number" placeholder="Enter time" v-model="time"><br>
+ </form>
+
+ 
+ <p>OUR COMPOUND INTEREST IS: {{result}} NAIRA</p>
+</div>
+      <script src="app.js"></script>
+</body>
+</html>
